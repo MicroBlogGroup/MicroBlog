@@ -1,6 +1,6 @@
 header {
   border-bottom: 1px solid #e6e6e6;
-  margin: auto 0; }
+  margin: 0 auto; }
   header i {
     margin: 1em 1em 1em 0;
     font-size: 3em;
@@ -10,8 +10,13 @@ header {
     font-size: 3.5em;
     float: left; }
 
+main {
+  width: 80%; }
+
 nav {
-  margin: auto 0;
   clear: both; }
+
+section article {
+  height: 7em; }
 
 /*# sourceMappingURL=style.css.map */
