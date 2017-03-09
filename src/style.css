@@ -1,0 +1,22 @@
+header {
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0 auto; }
+  header i {
+    margin: 1em 1em 1em 0;
+    font-size: 3em;
+    float: left; }
+  header h1 {
+    font-family: serif;
+    font-size: 3.5em;
+    float: left; }
+
+main {
+  width: 80%; }
+
+nav {
+  clear: both; }
+
+section article {
+  height: 7em; }
+
+/*# sourceMappingURL=style.css.map */

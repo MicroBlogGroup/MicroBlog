@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,MAAM;EACJ,aAAa,EAAC,iBAA4B;EAC1C,MAAM,EAAC,MAAM;EACb,QAAE;IACA,MAAM,EAAC,aAAa;IACpB,SAAS,EAAC,GAAG;IACb,KAAK,EAAC,IAAI;EAGZ,SAAE;IACA,WAAW,EAAC,KAAK;IACjB,SAAS,EAAE,KAAK;IAChB,KAAK,EAAC,IAAI;;ACZd,IAAK;EAEH,KAAK,EAAC,GAAG;;ACHX,GAAG;EAED,KAAK,EAAC,IAAI;;ACCR,eAAO;EACP,MAAM,EAAC,GAAG",
+"sources": ["sass/indexheader.scss","sass/mainINbody.scss","sass/navbar.scss","sass/panel.scss"],
+"names": [],
+"file": "style.css"
+}
