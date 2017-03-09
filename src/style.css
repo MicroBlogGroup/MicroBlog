@@ -1,0 +1,17 @@
+header {
+  border-bottom: 1px solid #e6e6e6;
+  margin: auto 0; }
+  header i {
+    margin: 1em 1em 1em 0;
+    font-size: 3em;
+    float: left; }
+  header h1 {
+    font-family: serif;
+    font-size: 3.5em;
+    float: left; }
+
+nav {
+  margin: auto 0;
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */
