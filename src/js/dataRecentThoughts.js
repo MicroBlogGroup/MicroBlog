@@ -22,8 +22,8 @@
             console.log("SUCCESS " + response.status);
 
             response.json().then(function printData(thoughts) {
-                console.log(thoughts[0].content);
-                console.log(thoughts); //this returns the thought data object
+                // console.log(thoughts[0].content);
+                // console.log(thoughts); //this returns the thought data object
                 //next step will be to retrurn each object inside the object array from
                 // a for each loop, populating the panels inside li's within the html
                 // using jquery
@@ -31,10 +31,20 @@
 
                 thoughts.forEach(function getThoughtAndDate(data) {
                     console.log(data);
-                    $('ul')
-                      .append('<li><aside>' +
-                        data.createTime + '</aside><article>' +
-                        data.content + '</article></li>');
+
+
+                      let newArticle = $('<article></article>');
+                        newArticle.addClass('pabel-body').text(data.content);
+
+                      let newAside = $('<aside></aside>');
+                      newAside.addClass('panel-heading').text(data.createTime);
+
+                      let newLi = $('<li></li');
+                      newLi.addClass('panel panel-default').append(newAside, newArticle);
+
+
+                      $('ul').append(newLi);
+
 
                 });
 
