@@ -5,8 +5,7 @@
 
     console.log("hello from recenthoughts!!!");
 
-
-    fetch('https://thoughter.herokuapp.com/api/thoughts',
+    fetch('https://thoughter.herokuapp.com/api/thoughts?filter={"order":"createTime DESC", "limit": 20}',
 
         {
             method: 'GET',
@@ -18,19 +17,40 @@
             }
         }
 
-    ).then(function handleResponse(response){
-      //check response code
+    ).then(function handleResponse(response) {
+        if (response.status > 199 && response.status < 300) {
+            console.log("SUCCESS " + response.status);
+
+            response.json().then(function printData(thoughts) {
+                console.log(thoughts[0].content);
+                console.log(thoughts); //this returns the thought data object
+                //next step will be to retrurn each object inside the object array from
+                // a for each loop, populating the panels inside li's within the html
+                // using jquery
+
+
+                thoughts.forEach(function getThoughtAndDate(data) {
+                    console.log(data);
+                    $('ul')
+                      .append('<li><aside>' +
+                        data.createTime + '</aside><article>' +
+                        data.content + '</article></li>');
+
+                });
+
+
+              });
+
+
+        } else {
+
+            console.log('ERROR- ' + response.status);
 
 
 
-        response.json().then(function printData(thoughts){
-              console.log(thoughts[0].content);//this returns the thought data object
-              //next step will be to retrurn each object inside the object array from
-              // a for each loop, populating the panels inside li's within the html
-              // using jquery
-              //
+        }
 
-        });
+
 
 
     });
