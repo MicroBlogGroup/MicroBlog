@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Recent Thoughts</title>
 
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>
     <link href='style.css' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <header>
-      <i class='glyphicon glyphicon-send' aria-hidden="true"></i>
-      <h1>Thoughter</h1>
+</head>
 
+<body>
+
+    <header>
+        <i class='glyphicon glyphicon-send' aria-hidden="true"></i>
+        <h1>Thoughter</h1>
     </header>
+
     <nav class="navbar navbar-default">
-       <a class="navbar-brand" href="#">Recent Thoughts</a>
-       <a class="navbar-brand" href="#">New Thought</a>
-       <a class="navbar-brand" href="#">Logout</a>
+        <a class="navbar-brand" href="http://127.0.0.1:8080/recentThoughts#">Recent Thoughts</a>
+        <a class="navbar-brand" href="http://127.0.0.1:8080/newThought#">New Thought</a>
+        <a class="navbar-brand" href="http://127.0.0.1:8080/index#">Logout</a>
     </nav>
 
     <main>
-      <h2>Recent Thoughts</h2>
-      <section class="panel panel-default">
-        <aside class="panel-heading">Panel heading without title</aside>
-        <article class="panel-body">
-          Panel content
-        </article>
-      </section>
+        <h2>Recent Thoughts</h2>
+        <ul class='thoughtPanel'>
 
-
+        </ul>
     </main>
 
 
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-  <script src='js/dataRecentThoughts.js'></script>
-  </body>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='js/dataRecentThoughts.js'></script>
+</body>
+
 </html>
