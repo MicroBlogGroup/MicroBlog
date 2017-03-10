@@ -21,8 +21,11 @@ nav {
   clear: both;
   margin: .5em 1em 0 1em; }
 
-section article {
-  height: 7em; }
-
+ul li {
+  list-style: none; }
+  ul li aside .panel-heading {
+    background-color: #d9edf7; }
+  ul li article {
+    height: 7em; }
 
 /*# sourceMappingURL=style.css.map */
