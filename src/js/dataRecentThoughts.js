@@ -26,13 +26,13 @@
                       let newDate = Date(data.createTime);//turn this into a date object so we manipulate it
                       console.log(newDate);
                       let newArticle = $('<article></article>');
-                        newArticle.addClass('pabel-body').text(data.content);
+                        newArticle.addClass('panel-body').text(data.content);
 
                       let newAside = $('<aside></aside>');
                       newAside.addClass('panel-heading').text("Posted at " + newDate);
 
                       let newLi = $('<li></li');
-                      newLi.addClass('panel panel-default').append(newAside, newArticle);
+                      newLi.addClass('panel panel-info').append(newAside, newArticle);
 
                       $('ul').append(newLi);
 
