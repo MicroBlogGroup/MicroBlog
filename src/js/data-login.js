@@ -24,6 +24,8 @@ console.log('hi');
     //creating promise handlers
     //any ajax call will always return a promise either a error or success
     .done(function sucess(data){
+
+      window.thoughter.user = data;
       console.log(data);
     })
     .fail(function error(err){
