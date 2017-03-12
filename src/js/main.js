@@ -26,6 +26,6 @@
     // print the html as a string
     let newThought = $('#newThoughts')[0].value;
     console.log(newThought);
-    window.thoughter.newThought(newThought, 'jordan');
+    window.thoughter.newThought(newThought);
   });
 }());

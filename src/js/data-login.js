@@ -24,7 +24,8 @@ console.log('hi');
     //creating promise handlers
     //any ajax call will always return a promise either a error or success
     .done(function sucess(data){
-
+    //storing user data in thoughter name space because we used the id and
+    //author id in other files
       window.thoughter.user = data;
       console.log(data);
     })
