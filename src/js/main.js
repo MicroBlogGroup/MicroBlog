@@ -19,5 +19,13 @@
     //now calling the function
     window.thoughter.login(username, password);
   });
-
+  //---------------Creating event handler for newThought submit-------
+  $('.newThought').on('submit', function newThought(e){
+    e.preventDefault();
+    // withought 0 you will not be able to use jquery goodness and itll
+    // print the html as a string
+    let newThought = $('#newThoughts')[0].value;
+    console.log(newThought);
+    window.thoughter.newThought(newThought);
+  });
 }());
