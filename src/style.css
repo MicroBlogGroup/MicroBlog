@@ -17,6 +17,30 @@ main {
   margin: 0 auto;
   width: 90%; }
 
+.loginForms {
+  display: flex;
+  justify-content: space-around; }
+  .loginForms .btn {
+    margin-top: 1em; }
+  .loginForms form {
+    width: 30%; }
+  .loginForms label {
+    font-size: 2em; }
+
+.loginSymbol {
+  display: flex; }
+  .loginSymbol .input-group-addon {
+    padding-right: 2em; }
+  .loginSymbol .form-control {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+
+.newThought {
+  width: 60%;
+  margin: 0 auto; }
+  .newThought .btn {
+    margin-top: 1em; }
+
 nav {
   clear: both;
   margin: .5em 1em 0 1em; }
