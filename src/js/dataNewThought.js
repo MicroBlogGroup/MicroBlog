@@ -21,11 +21,14 @@ console.log(newThought);
           method: 'POST',
           dataType: 'json',
           body: JSON.stringify({
-            'content': newThought,
-            'authorId': ''
+            'content': newThought,//when this function newThought is called we pass the thought over
+            //from our name space to this variable new thought
+            'authorId': ''//left empty because in this case not necesary though we could use
+            //local storage or name space to get this value
           }),
           headers: {
               Authorization: 'IuiL0gsrlxnlPIZQDp6gAZZVlmNlfrTpMgmVIRJIq08DPFxyq5FRrCBh4k55LOC6',
+              //used from recent js
               'Content-Type': 'application/json'
             }
       }
