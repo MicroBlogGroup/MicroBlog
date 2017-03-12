@@ -6,9 +6,9 @@
 console.log('hi');
  function login(username, password){
    //creating ajax for log in ajax passes data through objects
-  $.ajax({
-    url: 'https://thoughter.herokuapp.com/api/Authors/login',
-    method: 'POST',
+   fetch('https://thoughter.herokuapp.com/api/Authors/login',
+    {
+      method: 'POST',
     dataType: 'json',
     //creating data block/body which are always objects
     //server doesnt take any data type other then json so we are making this data
