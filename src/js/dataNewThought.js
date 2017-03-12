@@ -7,6 +7,9 @@
   //creating something called new thought with in the object thoughter
   //and what we want new thought to = is this function newthought
   window.thoughter.newThought = newThought;
+  //grabbing local storage data for user that i already
+  //unstringifying with json.parse
+  const user = JSON.parse(localStorage.getItem('user'));
 console.log("hi data new thought");
 
 function newThought(newThought){
@@ -16,12 +19,13 @@ console.log(newThought);
 
         {
           method: 'POST',
-          data: {
+          dataType: 'json',
+          body: JSON.stringify({
             'content': newThought,
             'authorId': ''
-          },
+          }),
           headers: {
-              Authorization: '8y6r6Tz5bg7wA42Dmi8fAznrntLuyHOabmlm3N3OMjGRBVkeX3vWzu1qw8zs7wna',
+              Authorization: 'IuiL0gsrlxnlPIZQDp6gAZZVlmNlfrTpMgmVIRJIq08DPFxyq5FRrCBh4k55LOC6',
               'Content-Type': 'application/json'
             }
       }

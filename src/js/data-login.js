@@ -13,7 +13,7 @@ console.log('hi');
     //creating data block/body which are always objects
     //server doesnt take any data type other then json so we are making this data
     //block into json
-    data: JSON.stringify({
+    body: JSON.stringify({
       'username': username,
       'password': password,
     }),
@@ -23,14 +23,21 @@ console.log('hi');
   })
     //creating promise handlers
     //any ajax call will always return a promise either a error or success
-    .done(function sucess(data){
+    .then(function handleResponse(response) {
+        if (response.status > 199 && response.status < 300) {
+            console.log("SUCCESS " + response.status);
+
+    response.json().then(function printData(data) {
     //storing user data in thoughter name space because we used the id and
     //author id in other files
       window.thoughter.user = data;
       console.log(data);
-    })
-    .fail(function error(err){
-      console.log(err);
     });
+    } else {
+      console.log('ERROR- ' + response.status);
+
+    }
+  });
 }
+
 }());
