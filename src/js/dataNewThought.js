@@ -1,3 +1,4 @@
+
 (function() {
   'use strict';
 
@@ -8,7 +9,11 @@
 
   const user = JSON.parse(localStorage.getItem('user'));
 console.log("hi data new thought");
-
+/**
+ * fetch user data inputted through newThought.html from API
+ * @param  {JSON} newThought users new thought
+ * @return {void}
+ */
 function newThought(newThought){
 console.log(newThought);
 
@@ -27,12 +32,24 @@ console.log(newThought);
             }
       }
 
-  ).then(function handleResponse(response) {
+  ).then(
+/**
+ * handles response of newThought to determine if status is successfull
+ * @param  {Promise} response response from newThought
+ * @return {void}
+ */
+    function handleResponse(response) {
       if (response.status > 199 && response.status < 300) {
           console.log("SUCCESS " + response.status);
 
-          response.json().then(function printData(thought) {
-               console.log(thought); 
+          response.json().then(
+            /**
+             * successfull response status that prints a new 'thought'
+             * @param  {JSON} thought prints new thought
+             * @return {void}
+             */
+            function printData(thought) {
+               console.log(thought);
           });
 
               } else {
