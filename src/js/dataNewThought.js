@@ -7,8 +7,8 @@
 
   window.thoughter.newThought = newThought;
 
-  const user = JSON.parse(localStorage.getItem('user'));
-console.log("hi data new thought");
+  // const user = JSON.parse(localStorage.getItem('user'));
+console.log('hi data new thought');
 /**
  * fetch user data inputted through newThought.html from API
  * @param  {JSON} newThought users new thought
@@ -40,7 +40,7 @@ console.log(newThought);
  */
     function handleResponse(response) {
       if (response.status > 199 && response.status < 300) {
-          console.log("SUCCESS " + response.status);
+          console.log('SUCCESS' + response.status);
 
           response.json().then(
             /**
