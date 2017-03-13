@@ -1,25 +1,30 @@
+
+
 .loginForms {
-  display: flex;
-  justify-content: space-around;
-  .btn {
-    margin-top: 1em;
-  }
-  form {
-    width: 30%;
-  }
-  label{
-    font-size: 2em;
-  }
+    display: flex;
+    justify-content: space-around;
+
+    .btn {
+        margin-top: 1em;
+    }
+
+    form {
+        width: 30%;
+    }
+
+    label {
+        font-size: 2em;
+    }
 }
 
 .loginSymbol {
-  display: flex;
-  .input-group-addon{
-    padding-right: 2em;
-  }
-  .form-control{
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    display: flex;
+    .input-group-addon {
+        padding-right: 2em;
+    }
 
-  }
+    .form-control {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
 }

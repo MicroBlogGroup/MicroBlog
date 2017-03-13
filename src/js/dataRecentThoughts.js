@@ -23,11 +23,9 @@
                 thoughts.forEach(function getThoughtAndDate(data) {
                     console.log(data);
 
-                      let newDate = new Date(data.createTime);//turn this into a date object so we manipulate it
+                      let newDate = new Date(data.createTime);
                       console.log(newDate);
-                      //starting to manipulate time stamp here
-                      //first hours then minutes then month
-                      //got hours add : cus this is how its gunna look and then add minutes
+
                       let time = newDate.getHours() + ':' + newDate.getMinutes();
                       let day = newDate.getMonth() + '/' + newDate.getDate() + '/' + newDate.getUTCFullYear();
                       let newArticle = $('<article></article>');
