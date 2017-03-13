@@ -21,20 +21,37 @@
       <a class="navbar-brand" href="http://127.0.0.1:8080/src/newThought#">New Thought</a>
       <a class="navbar-brand" href="http://127.0.0.1:8080/src/index#">Logout</a>
     </nav>
-
+    <main class='loginForms'>
     <form class='login'>
       <fieldset class="form-group">
         <label for='userName'>Login</label>
+        <aside class='loginSymbol'>
+          <span class="input-group-addon">@</span>
           <input type='text' class='form-control' id='userName' placeholder='username'>
+        </aside>
           <input type='password' class='form-control' id='exampleInputPassword1' placeholder='Password'>
-          <input type='submit' class='btn btn-default' value='Login'>
+          <input type='submit' class='btn btn-success' value='Login'>
       </fieldset>
     </form>
+
+    <form class='create'>
+      <fieldset class="form-group">
+        <label for='CreateUserName'>Create Account</label>
+        <aside class='loginSymbol'>
+          <span class="input-group-addon">@</span>
+          <input type='text' class='form-control' id='createUserName' placeholder='username'>
+        </aside>
+          <input type='password' class='form-control' id='exampleInputPassword1' placeholder='Password'>
+          <input type='submit' class='btn btn-primary' value='Create Account'>
+      </fieldset>
+    </form>
+  </main>
 
   </body>
   <!-- jordan asked us specifically not to use cdn here both two lines below
 are the same -->
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script> 
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script> ---
+  <!-- <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script> -->
   <script src='../node_modules/jquery/dist/jquery.min.js'></script>
   <script src='js/main.js'></script>
   <script src='js/data-login.js'></script>
