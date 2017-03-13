@@ -3,12 +3,12 @@
     window.thoughter = window.thoughter || {};
     window.thoughter.login = login;
     console.log('hi');
-/**
- * Passes JSON data into the API with fetch
- * @param  {json} username  The username string converted to JSON sent to the API
- * @param  {json} password  The password string converted to JSON sent to the API
- * @return {void}
- */
+    /**
+     * Passes JSON data into the API with fetch
+     * @param  {json} username  The username string converted to JSON sent to the API
+     * @param  {json} password  The password string converted to JSON sent to the API
+     * @return {void}
+     */
     function login(username, password) {
 
         fetch('https://thoughter.herokuapp.com/api/Authors/login', {
